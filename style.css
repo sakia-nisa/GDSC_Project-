@@ -1,0 +1,141 @@
+:root {
+    --blue:#64a0f9;
+    --black: #37404a;
+    --gray:#c4d5ef;
+}
+*{
+    font-family: 'Bree Serif', serif;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+    padding: 96px 0px;
+    display: flex;
+}
+#intro{
+    justify-content: space-between;
+    padding: 96px;
+}
+
+#intro > img{
+    height: 500px;
+    width: 500px;
+    border: 15px solid var(--blue);
+    border-radius: 50%;
+}
+#intro > div {
+    padding-top: 96px;
+}
+h1{
+    font-size: 5em;
+    color:var(--blue);
+    margin: 0;
+}
+
+h2{
+    font-size: 3em;
+    margin: 0;
+}
+
+#about {
+    background: var(--blue);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.my-skill {
+    align-items: center;
+    justify-content: center;
+    padding-left: 550px;
+    text-align: center;
+}
+
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 500px;
+    text-align: left;
+}
+.skill-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+#contacts,
+#contacts > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecf2fd;
+}
+
+#contacts > div {
+  flex-direction: column;
+}
+
+#contacts > div > div {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 16px 20px;
+  background: var(--blue);
+  color: white;
+  border: 0;
+  height: 60px;
+  width: fit-content;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-btn > i {
+  font-size: 36px;
+}
+
+.contact-btn > p {
+  font-size: 24px;
+}
+
+.contact-btn:hover {
+  color: var(--blue);
+  background: white;
+  border: var(--blue) 2px solid;
+}
+
+
+#contacts > div > h2 {
+    text-align: center;
+  }
+  #contact-list {
+    flex-direction: column;
+    align-items: center;
+  }
